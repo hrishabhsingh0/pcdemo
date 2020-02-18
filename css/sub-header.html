@@ -1,0 +1,37 @@
+<div class="filter-content-main-section">
+    <div class="filter-content mdl-color--blue-grey-900">
+       <div>
+          <div class="filter-selection-main">
+             <button id="toggle-btn-icon" class="main--bar-btn mdl-button mdl-js-button   mobile-off" onclick="$('body').toggleClass('closed-small--menu')" tabindex="0">
+                    <span class="toggle-btn-icon"></span>
+             </button>
+             <div class="filtertags">
+                  <ul>
+                      <li id="checkbox--1" class="filter-tab-box" *ngFor="let s of selectedFilter"> 
+                       {{s}}                        
+                        <label class="close-btn mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" for="checkbox-1"> <i class="material-icons" (click)="deleteFromHeader(s)">close</i></label>
+                      </li> 
+                  </ul>
+            </div>
+          
+             <div class="map-controls full-width-controllar round-controllar">
+                  <button class="clear-map-control" (click)="onClearMapControls()"> Default </button>
+                   <div class="switchToggle map-switch--tab" id="tool-1">
+                       <input type="radio" class="radio" name="switch" id="list-check-id">
+                       <label class="switch map-view-switch" for="list-check-id" (click)="onChangeFullMapView($event)">
+                          Map
+                       </label>
+                       <div class="mdl-tooltip" data-mdl-for="tool-1">View <strong>Full Map</strong></div>
+                   </div>
+                   <div class="switchToggle list-switch--tab" id="tool-2">
+                       <input type="radio" class="radio" name="switch" id="map-check-id">
+                       <label class="switch list-view-switch" for="map-check-id" (click)="onChangeFullListView($event)">
+                          List
+                       </label>
+                       <div class="mdl-tooltip" data-mdl-for="tool-2">View <strong>Full List</strong></div>
+                   </div>
+         </div>
+      </div>
+       </div>
+    </div>
+ </div>

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>T&C</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--  <link rel="icon" sizes="192x192" href="images/android-desktop.png"> -->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <!-- <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png"> -->
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+         <link rel="canonical" href="http://www.example.com/">
+         -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../css/carbon-components.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="../jqueryui/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap-select.css">
+</head>
+
+<body class="mdl-demo mdl-color--grey-100  mdl-base opensidebarmenu showingmap open-cases-tab main--careonsite closed--menu">
+    <div class="layout--main layout--main-osca">
+        <div class="layout--sidebar-osca">
+            <div class="navbar-top">
+                <div class="logo">
+                    <img class="logo-icon" src="../images/osca-logo.png">
+                    <span class="logo-text secondary-text"></span>
+                </div>
+                <button class="btn btn-sidebar" onclick="$('body').toggleClass('closed--menu')">
+                    <i class="secondary-text mat-icon notranslate material-icons mat-icon-no-color" role="img" aria-hidden="true">menu</i>
+                </button>
+            </div>
+            <div class="navbar-scroll-container">
+                <div class="user">
+                    <div class="h3 username">Ronak P</div>
+                    <div class="h5 email hint-text mt-8">ronak.p@mail.com</div>
+                    <div class="avatar-container">
+                        <img class="avatar" src="../images/user.png">
+                    </div>
+                </div>
+                <div class="navbar-content">
+                    <ul class="navbar-content-ul navbar-content-top">
+                        <!--<li class="list-tem">
+                            <a href="#">
+                                <mat-icon class="nav-link-icon mat-icon  material-icons" role="img" aria-hidden="true">dashboard</mat-icon> 
+                                <span class="menu--text">Dashboard</span>
+                            </a>
+                        </li>-->
+                        <li class="list-tem">
+                            <a href="#" class="active">
+                                <mat-icon class="nav-link-icon mat-icon  material-icons" role="img" aria-hidden="true">school</mat-icon> 
+                                <span class="menu--text">OSCA Training</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-content-ul navbar-content-bottom">
+                        <!--<li class="list-tem">
+                            <a href="#">
+                                <mat-icon class="mat-icon notranslate material-icons" role="img" aria-hidden="true">account_circle</mat-icon>
+                                <span class="menu--text">My Profile</span>
+                            </a>
+                        </li>-->
+                        <li class="list-tem">
+                            <a href="#">
+                                <mat-icon class="mat-icon notranslate material-icons" role="img" aria-hidden="true">exit_to_app</mat-icon>
+                                <span class="menu--text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="course--detail ">
+            <div class="course--detail">
+                <div class="flex--col">
+                    <div class="course-detail-navv">
+                        <ul>
+                            <li>
+                                <a href="#">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">Get the sample code</a>
+                            </li>
+                            <li>
+                                <a href="#">Create a Firebase project and Set up your app</a>
+                            </li>
+                            <li>
+                                <a href="#">Install the Firebase Command Line Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Deploy and run the web app</a>
+                            </li>
+                            <li>
+                                <a href="#">The Functions Directory</a>
+                            </li>
+                            <li>
+                                <a href="#">Import the Cloud Functions and Firebase Admin modules</a>
+                            </li>
+                            <li>
+                                <a href="#">Images moderation</a>
+                            </li>
+                            <li>
+                                <a href="#">New Message Notifications</a>
+                            </li>
+                            <li>
+                                <a href="#">Congratulations!</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-detail-section">
+                        <div class="course-header">
+                            <h3> <a href="courselist.html" class="mat-icon notranslate ng-tns-c44-67 material-icons mat-icon-no-color" role="img" aria-hidden="true">arrow_back</a> Basics of Angular</h3>
+                        </div>
+                        <div class="course--detail-content">
+                            <div class="course-step-content" id="course-step-content">
+                                <h1>Step 1 - Introduction</h1><br>This is an example step of the course. You can put anything in here from example codes to videos.<br><br>To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.To install or upgrade the CLI run the following <b>npm</b> command:<br><br><code>npm -g install @angular/cli</code><br><br>To verify that the CLI has been installed correctly, open a console and run:<br><br><code>ng version</code><br><br>
+                                <h2>Install dependencies</h2><br>To moderate the images we'll need a few Node.js packages:<br><br>
+                                <ul>
+                                    <li>The Google Cloud Vision Client Library for Node.js: @google-cloud/vision to run the image through the Cloud Vision API to detect inappropriate images.</li><br>
+                                    <li>The Google Cloud Storage Client Library for Node.js: @google-cloud/storage to download and upload the images from Cloud Storage.</li><br>
+                                    <li>A Node.js library allowing us to run processes: child-process-promise to run ImageMagick since the ImageMagick command-line tool comes pre-installed on all Functions instances.</li>
+                                </ul><br>To install these three packages into your Cloud Functions app, run the following npm install --save command. Make sure that you do this from the functions directory.<br><br><code>npm install --save @google-cloud/vision @google-cloud/storage child-process-promise</code><br><br>This will install the three packages locally and add them as declared dependencies in your package.js file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="bootstrap/js/moment.min.js"></script>
+         -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/moment.min.js"></script>
+<script src="../jqueryui/jquery-ui.js"></script>
+<script src="../js/bootstrap-select.js"></script>
+<script src="../js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+<script type="text/javascript">
+$("#Forgotpassword").click(function() {
+    $('#verification-verification').show();
+    $('#login-step-1').hide();
+    $('#login-step-2').hide();
+
+});
+
+
+
+$("#Forgotusernamebtn").click(function() {
+    $('#verification-verification').hide();
+    $('#login-step-1').hide();
+    $('#login-step-2').hide();
+    $('#login-step-username').show();
+    $('#ruser_name-label').click();
+});
+
+
+
+$('#verification-form').submit(function(e) {
+    $('#verification-verification').hide();
+    $('#login-step-1').hide();
+    $('#login-step-2').hide();
+    $('#login-step-resetpassword').show();
+});
+
+
+$('#username-form').submit(function(e) {
+    $('#verification-verification').hide();
+    $('#login-step-1').hide();
+    $('#login-step-2').hide();
+    $('#login-step-username').hide();
+    $('#username-success').show();
+});
+
+
+
+
+
+$(document).ready(function() {
+
+    $('#login-form').submit(function(e) {
+
+        e.preventDefault();
+        var user_name = $('#user_name').val();
+        var usera = '123456';
+        var userb = 'ronakp';
+
+
+        $(".error").remove();
+
+        if (user_name.length < 1) {
+            $('#user_name').parent().after('<span class="error invalid">This field is required</span>');
+            $('#user_name').parent().addClass('is-invalid');
+            $('#login-label').click();
+        } else if (user_name != usera) {
+            $('#user_name').parent().after('<span class="error invalid"> Invalid Access Code </span>');
+            $('#user_name').parent().addClass('is-invalid');
+            $('#login-label').click();
+        }
+
+
+
+        var user_name1 = $('#user_name').val();
+        var usera1 = '123456';
+
+        if (user_name1 == usera1) {
+
+            $('#login-step-1 .loader').show();
+
+            setTimeout(function() {
+                $('#login-step-1').hide();
+                $('#login-step-2').show();
+                $('#password-label').click();
+            }, 2000);
+        }
+
+    });
+
+
+    $('#user_name').keyup(function() {
+
+        var user_name1 = $('#user_name').val();
+        var usera1 = '123456';
+
+        if (user_name1 == usera1) {
+            $(this).parent().addClass('is-valid');
+            $('.error').hide();
+
+        } else {
+            $(this).parent().removeClass('is-valid');
+        }
+
+    });
+
+
+    // forgotpassword
+
+    $('#password-form').submit(function(e) {
+
+
+        e.preventDefault();
+        var passwordval = $('#password').val();
+        var password = 'password';
+
+
+        $(".error").remove();
+
+        if (passwordval.length < 1) {
+            $('#password').parent().after('<span class="error invalid">Password is required</span>');
+            $('#password').parent().addClass('is-invalid');
+        } else if (passwordval != password) {
+            $('#password').parent().after('<span class="error invalid"> Wrong password. Try again or click Forgot password to reset it. </span>');
+            $('#password').parent().addClass('is-invalid');
+        }
+
+
+
+        var passwordval = $('#password').val();
+        var password = 'password';
+
+
+        if (passwordval == password) {
+
+            $(this).parent().removeClass('is-valid');
+            $('#login-step-2 .loader').show();
+
+            setTimeout(function() {
+                window.location = "index.html";
+            }, 2000);
+        }
+
+    });
+
+
+
+
+    // resetpassword
+
+    $('#resetpassword-form').submit(function(e) {
+
+
+        e.preventDefault();
+        var resetpassword1 = $('#resetpassword1').val();
+        var resetpassword2 = $('#resetpassword2').val();
+
+
+        $(".error").remove();
+
+        if (resetpassword1.length < 1) {
+            $('#resetpassword1').parent().after('<span class="error invalid">Password is required</span>');
+            $('#resetpassword1').parent().addClass('is-invalid');
+        }
+
+        if (resetpassword2.length < 1) {
+            $('#resetpassword2').parent().after('<span class="error invalid">Password is required</span>');
+            $('#resetpassword2').parent().addClass('is-invalid');
+        }
+
+
+
+
+
+        $('#resetpassword2').keyup(function() {
+
+            var resetpassword1 = $('#resetpassword1').val();
+            var resetpassword2 = $('#resetpassword2').val();
+
+            if (resetpassword1 == resetpassword2) {
+                $(this).parent().addClass('is-valid');
+                $('.error').hide();
+
+            } else {
+                $(this).parent().removeClass('is-valid');
+            }
+
+        });
+
+
+    });
+
+
+
+
+    $(document).ready(function() {
+
+
+
+        function checkStrength(password) {
+
+            //initial strength
+            var strength = 0
+
+            //if the password length is less than 6, return message.
+            if (password.length < 6) {
+                $('#result').removeClass()
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#resetpassword-label1').addClass('is-invalid')
+                $('#result').addClass('short')
+                return 'Your password is too short'
+            }
+
+            //length is ok, lets continue.
+
+            //if length is 8 characters or more, increase strength value
+            if (password.length > 7) strength += 1
+
+            //if password contains both lower and uppercase characters, increase strength value
+            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
+
+            //if it has numbers and characters, increase strength value
+            if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
+
+            //if it has one special character, increase strength value
+            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+            //if it has two special characters, increase strength value
+            if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+            //now we have calculated strength value, we can return messages
+
+            //if value is less than 2
+            if (strength < 2) {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('weak')
+                $('#resetpassword-label1').addClass('is-invalid')
+                return 'Your password is Weak'
+            } else if (strength == 2) {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('good')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').addClass('is-warning')
+                return 'Your password is Good'
+            } else {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('strong')
+                $('#resetpassword-label1').removeClass('is-warning')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#resetpassword-label1').addClass('is-valid')
+                return 'Your password is Strong'
+            }
+        }
+
+
+        $('#resetpassword1').keyup(function() {
+            $('#result').html(checkStrength($('#resetpassword1').val()));
+
+        })
+
+
+    });
+
+
+
+});
+</script>
