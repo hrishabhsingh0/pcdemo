@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>T&C</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--  <link rel="icon" sizes="192x192" href="images/android-desktop.png"> -->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <!-- <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png"> -->
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+         <link rel="canonical" href="http://www.example.com/">
+         -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/carbon-components.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="jqueryui/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+
+<body class="mdl-demo mdl-color--grey-100  mdl-base opensidebarmenu showingmap open-cases-tab main--careonsite">
+    <div class="layout--main">
+        <div class="main--login">
+            <div class="login-form" id="login-step-1">
+                <div class="loader" style="display: none;">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="loginn-header">
+                    <img src="images/sidebar/fox.svg">
+                    <h4>Sign in</h4>
+                    <p>to continue to Wally</p>
+                </div>
+                <form action="#" id="login-form">
+                    <div class="login-body">
+                        <div class="login-content">
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="login-label">
+                                    <input placeholder=" " id="user_name">
+                                    <span class="placeholder">Username</span>
+                                </label>
+                            </div>
+                            <a href="#" class="link forgot-link" id="Forgotusernamebtn">Forgot username</a>
+                            <div class="other-option-message">
+                                Not your computer? Use Guest mode to sign in privately.
+                                <a href="#" class="link learnmore-link">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <a href="#" class=" link createacc-link">Create Account</a>
+                        <button class="btn btn-submit">Next</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-form" id="login-step-2" style="display: none;">
+                <div class="loader" style="display: none;">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="loginn-header">
+                    <img src="images/sidebar/fox.svg">
+                    <h4>Welcome</h4>
+                    <p>
+                        <button class="username--btn"> <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="20px" height="20px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path>
+                            </svg> Dow Tang <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="18px" height="18px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon>
+                            </svg></button>
+                    </p>
+                </div>
+                <form action="#" id="password-form">
+                    <div class="login-body">
+                        <div class="login-content">
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="password-label">
+                                    <input placeholder=" " type="password" id="password">
+                                    <span class="placeholder">Enter your password</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <a href="#" class=" link createacc-link" id="Forgotpassword"> Forgot password </a>
+                        <button class="btn btn-submit">Next</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-form" id="verification-verification" style="display: none;">
+                <div class="loader" style="display: none;">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="loginn-header">
+                    <img src="images/sidebar/fox.svg">
+                    <h4>Account recovery</h4>
+                    <p class="mb-2">This helps show that this account really belongs to you</p>
+                    <p>
+                        <button class="username--btn mb-1"> <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="20px" height="20px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path>
+                            </svg> Dow Tang <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="18px" height="18px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon>
+                            </svg></button>
+                    </p>
+                    <div class="verification--img">
+                        <img src="https://ssl.gstatic.com/accounts/account-recovery-sms-pin.gif" style="    width: 155px;">
+                    </div>
+                    <div class="verification-description">
+                        <h5 class="title-v">Get a verification code</h5>
+                        <p>
+                            <i>To get a verification code, first confirm the phone number or email you added to your account.</i>
+                        </p>
+                    </div>
+                </div>
+                <form action="#" id="verification-form">
+                    <div class="login-body">
+                        <div class="login-content">
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="emailmobile">
+                                    <input placeholder=" " type="text" id="emailmobile">
+                                    <span class="placeholder">Email or Phone</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <!-- <a href="#" class=" link createacc-link"> Forgot password </a> -->
+                        <button class="btn btn-submit ml-auto">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-form" id="login-step-resetpassword" style="display: none;">
+                <div class="loader" style="display: none;">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="loginn-header">
+                    <img src="images/sidebar/fox.svg">
+                    <h4>Change Password</h4>
+                    <p>
+                        <button class="username--btn"> <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="20px" height="20px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path>
+                            </svg> Dow Tang <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="18px" height="18px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                                <polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon>
+                            </svg></button>
+                    </p>
+                    <p>
+                        Create a new, strong password that you don't use for other websites.
+                    </p>
+                </div>
+                <form action="#" id="resetpassword-form">
+                    <div class="login-body">
+                        <div class="login-content">
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="resetpassword-label1">
+                                    <input placeholder=" " type="password" id="resetpassword1">
+                                    <span class="placeholder">Create your password</span>
+                                </label>
+                                <div class="password-strenth-status">
+                                    <span id="result"></span>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="resetpassword-label2">
+                                    <input placeholder=" " type="password" id="resetpassword2">
+                                    <span class="placeholder">Confirm</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <!-- <a href="#" class=" link createacc-link"> Forgot password </a> -->
+                        <button class="btn btn-submit ml-auto">Next</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="login-form" id="login-step-username" style="display: none;">
+                <div class="loader" style="display: none;">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="loginn-header">
+                    <img src="images/sidebar/fox.svg">
+                    <h4>Find your email</h4>
+                    <p>Enter your phone number or recovery email</p>
+                </div>
+                <form action="#" id="username-form">
+                    <div class="login-body">
+                        <div class="login-content">
+                            <div class="form-col">
+                                <label class="pure-material-textfield-outlined" id="ruser_name-label">
+                                    <input placeholder=" " id="user_name">
+                                    <span class="placeholder">Username</span>
+                                </label>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <a href="#" class=" link createacc-link">Create Account</a>
+                        <button class="btn btn-submit">Next</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="login-form" id="username-success" style="display: none;    min-height: unset;">
+
+
+                <div class="success-message">
+                    <img src="images/Green-Round-Tick.png">
+                    <h4>Username Sent!</h4>
+                    <p>Please check your inbox <strong>Dowtang@gmail.com</strong></p>
+
+                    <div class="other-option-message">
+                                Not your computer? Use Guest mode to sign in privately.
+                                <a href="#" class="link learnmore-link">Learn more</a>
+                            </div>
+
+                            <a href="login.html" class="backtologin btn btn-primary">back to login</a>
+
+                </div>
+
+                
+
+                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <script src="bootstrap/js/moment.min.js"></script>
+         -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/moment.min.js"></script>
+<script src="jqueryui/jquery-ui.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.5.0/r-2.2.2/rg-1.1.0/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+    $("#Forgotpassword").click(function(){
+       $('#verification-verification').show();
+       $('#login-step-1').hide();
+       $('#login-step-2').hide();
+
+    });
+
+
+
+    $("#Forgotusernamebtn").click(function(){
+       $('#verification-verification').hide();
+       $('#login-step-1').hide();
+       $('#login-step-2').hide();
+       $('#login-step-username').show();
+       $('#ruser_name-label').click();
+    });
+
+
+
+    $('#verification-form').submit(function(e) {
+        $('#verification-verification').hide();
+       $('#login-step-1').hide();
+       $('#login-step-2').hide();
+       $('#login-step-resetpassword').show();
+    });
+    
+
+    $('#username-form').submit(function(e) {
+       $('#verification-verification').hide();
+       $('#login-step-1').hide();
+       $('#login-step-2').hide();
+       $('#login-step-username').hide();
+       $('#username-success').show();
+    });
+
+
+    
+
+
+$(document).ready(function() {
+
+    $('#login-form').submit(function(e) {
+
+        e.preventDefault();
+        var user_name = $('#user_name').val();
+        var usera = 'dowtang';
+        var userb = 'ronakp';
+
+
+        $(".error").remove();
+
+        if (user_name.length < 1) {
+            $('#user_name').parent().after('<span class="error invalid">This field is required</span>');
+            $('#user_name').parent().addClass('is-invalid');
+            $('#login-label').click();
+        } else if (user_name != usera) {
+            $('#user_name').parent().after('<span class="error invalid"> Invalid username </span>');
+            $('#user_name').parent().addClass('is-invalid');
+            $('#login-label').click();
+        }
+
+
+
+        var user_name1 = $('#user_name').val();
+        var usera1 = 'dowtang';
+
+        if (user_name1 == usera1) {
+
+            $('#login-step-1 .loader').show();
+
+            setTimeout(function() {
+                $('#login-step-1').hide();
+                $('#login-step-2').show();
+                $('#password-label').click();
+            }, 2000);
+        }
+
+    });
+
+
+    $('#user_name').keyup(function() {
+
+        var user_name1 = $('#user_name').val();
+        var usera1 = 'dowtang';
+
+        if (user_name1 == usera1) {
+            $(this).parent().addClass('is-valid');
+            $('.error').hide();
+
+        } else {
+            $(this).parent().removeClass('is-valid');
+        }
+
+    });
+
+
+    // forgotpassword
+
+    $('#password-form').submit(function(e) {
+
+
+        e.preventDefault();
+        var passwordval = $('#password').val();
+        var password = 'password';
+
+
+        $(".error").remove();
+
+        if (passwordval.length < 1) {
+            $('#password').parent().after('<span class="error invalid">Password is required</span>');
+            $('#password').parent().addClass('is-invalid');
+        } else if (passwordval != password) {
+            $('#password').parent().after('<span class="error invalid"> Wrong password. Try again or click Forgot password to reset it. </span>');
+            $('#password').parent().addClass('is-invalid');
+        }
+
+
+
+        var passwordval = $('#password').val();
+        var password = 'password';
+
+
+        if (passwordval == password) {
+
+            $(this).parent().removeClass('is-valid');
+            $('#login-step-2 .loader').show();
+
+            setTimeout(function() {
+                window.location = "index.html";
+            }, 2000);
+        }
+
+    });
+
+
+
+
+    // resetpassword
+
+    $('#resetpassword-form').submit(function(e) {
+
+
+        e.preventDefault();
+        var resetpassword1 = $('#resetpassword1').val();
+        var resetpassword2 = $('#resetpassword2').val();
+
+
+        $(".error").remove();
+
+        if (resetpassword1.length < 1) {
+            $('#resetpassword1').parent().after('<span class="error invalid">Password is required</span>');
+            $('#resetpassword1').parent().addClass('is-invalid');
+        }
+
+        if (resetpassword2.length < 1) {
+            $('#resetpassword2').parent().after('<span class="error invalid">Password is required</span>');
+            $('#resetpassword2').parent().addClass('is-invalid');
+        }
+
+
+
+
+
+        $('#resetpassword2').keyup(function() {
+
+            var resetpassword1 = $('#resetpassword1').val();
+            var resetpassword2 = $('#resetpassword2').val();
+
+            if (resetpassword1 == resetpassword2) {
+                $(this).parent().addClass('is-valid');
+                $('.error').hide();
+
+            } else {
+                $(this).parent().removeClass('is-valid');
+            }
+
+        });
+
+
+    });
+
+
+
+
+    $(document).ready(function() {
+
+
+
+        function checkStrength(password) {
+
+            //initial strength
+            var strength = 0
+
+            //if the password length is less than 6, return message.
+            if (password.length < 6) {
+                $('#result').removeClass()
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#resetpassword-label1').addClass('is-invalid')
+                $('#result').addClass('short')
+                return 'Your password is too short'
+            }
+
+            //length is ok, lets continue.
+
+            //if length is 8 characters or more, increase strength value
+            if (password.length > 7) strength += 1
+
+            //if password contains both lower and uppercase characters, increase strength value
+            if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1
+
+            //if it has numbers and characters, increase strength value
+            if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1
+
+            //if it has one special character, increase strength value
+            if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+            //if it has two special characters, increase strength value
+            if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,",%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+
+            //now we have calculated strength value, we can return messages
+
+            //if value is less than 2
+            if (strength < 2) {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('weak')
+                $('#resetpassword-label1').addClass('is-invalid')
+                return 'Your password is Weak'
+            } else if (strength == 2) {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('good')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').addClass('is-warning')
+                return 'Your password is Good'
+            } else {
+                $('#resetpassword-label1').removeClass('is-valid')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#result').removeClass()
+                $('#result').addClass('strong')
+                $('#resetpassword-label1').removeClass('is-warning')
+                $('#resetpassword-label1').removeClass('is-invalid')
+                $('#resetpassword-label1').addClass('is-valid')
+                return 'Your password is Strong'
+            }
+        }
+
+
+        $('#resetpassword1').keyup(function() {
+            $('#result').html(checkStrength($('#resetpassword1').val()));
+
+        })
+
+
+    });
+
+
+
+});
+</script>
